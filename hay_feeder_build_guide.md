@@ -1,7 +1,14 @@
 # 7'x6' Forkable Dual-Purpose Hay Feeder: Build Guide
 
 **Footprint:** 7' Wide × 6' Deep (deck), roughly 7'4" × 6'2" over the walls
+**Built for:** Horses
 **Features:** Pallet-style skid base that loader forks slide straight under, double-swing front doors for round bale access, and overhead hanging points for 3 square-bale nets.
+**Horse-safety features:**
+* Solid lower walls and skirts around the base, so hooves can't get caught in gaps or under the floor.
+* Wide feeding windows a head slides in and out of freely.
+* A drop-in front bar to discourage climbing in.
+* Metal chew guards on the edges horses reach.
+* Hay nets hung behind the walls, out of reach of hooves.
 
 ---
 
@@ -25,11 +32,11 @@
 * There are no fork pockets to build and no steel plates. The forks don't need to be set at an exact spacing.
 
 ### Before you buy anything
-1. **Check your forks:** each bay is **33¼" wide × 5½" tall**. Your tines need to fit with room to spare, and you need to be able to set them roughly **30"–40" apart**. Tines 42"–48" long work well.
+1. **Check your forks:** each bay is **33¼" wide × 5½" tall**. Your tines need to fit with room to spare, and you need to be able to set them roughly **30"–40" apart**. Tines 42"–48" long work well. A removable skirt board covers the bays so hooves can't get under the floor; you unscrew it before forking.
 2. **Check your loader:**
-   * This feeder weighs an estimated **1,600–2,000 lb empty**. It's on the heavy end when the oak and hemlock are green (fresh-cut).
+   * Built as specified, with **dry** lumber, this feeder weighs an estimated **1,200–1,300 lb empty**. With green (fresh-cut) sawmill lumber it's closer to 1,550 lb. See *Keeping the Weight Down*.
    * The weight centers about **36" out** on the forks. That's farther than the 24" (or 500 mm) used for most loader ratings, so your real capacity is lower than the rating.
-   * If it's close, plan to drag the feeder with a chain instead (see *Moving the Feeder*), or use the weight-saving options in the material list.
+   * If it's close, plan to drag the feeder with a chain instead (see *Moving the Feeder*).
 3. **Pick the site:**
    * Choose a level, well-drained spot.
    * Point the **rear** wall toward your prevailing wind and weather. The roof sheds water off the back.
@@ -41,8 +48,9 @@
 * **Buy retail pressure-treated, ground-contact rated (UC4B preferred, UC4A minimum)** for anything that sits in or near soil, manure and mud: skids, joists, posts.
 * **Buy rough-cut lumber from a local PA sawmill (hemlock / oak)** for everything else. Sawmill lumber typically costs much less than retail.
   * **Hemlock** for walls, doors and roof framing. Hemlock isn't naturally rot-resistant, but it holds up well where it stays dry under the roof.
-  * **White oak** for the deck. It's rot-resistant, structural, and stands up to hooves and chewing.
-* **Green (fresh-cut) sawmill lumber shrinks as it dries.** Plan to re-tighten all bolts a few months after you build (see *Maintenance*).
+  * **White oak** for the deck, if you'd rather hay not sit on treated wood.
+* **Ask the mill for air-dried or kiln-dried stock.** Fresh-cut (green) hemlock is close to half water by weight, so dry lumber cuts **about 350–400 lb** off this feeder. It also shrinks and twists less after you build. If the mill only has green lumber, buy it early and let it dry stacked with spacer sticks under cover for a few months, or use store-bought kiln-dried SPF for the 2×4s and 2×6s.
+* **Any green lumber you do use will shrink.** Plan to re-tighten all bolts a few months after you build (see *Maintenance*).
 
 ---
 
@@ -53,23 +61,41 @@
 |---|---|---|---|
 | Ground skids | 3 | 4×6 × 8' (or 6' if stocked) | PT, ground contact |
 | Floor joists | 7 | 2×6 × 8' | PT, ground contact |
-| Floor decking | 6 | 2×8 × 12' (each cut into two 72" pieces) | Rough white oak (full 2"), or PT 2×8 |
+| Floor decking | 8 | 5/4×6 × 12' (each cut into two 72" pieces) | PT 5/4 deck boards (1" thick). Or 6 boards of rough 5/4×8 white oak (1¼"). |
+| Base skirts (hoof guards) | 4 | 2×10 × 8' | PT, ground contact |
 | Front posts | 2 | 4×4 × 10' | PT, ground contact |
 | Rear posts | 2 | 4×4 × 8' | PT, ground contact |
-| Front & rear headers | 2 | 2×6 × 8' | Rough hemlock or SPF |
-| Side rails (net hangers / bracing) | 2 | 2×6 × 8' | Rough hemlock or SPF |
-| Rafters | 5 | 2×4 × 8' | Rough hemlock or SPF |
-| Purlins (roof strapping) | 5 | 2×4 × 10' (or 1×4 × 10') | Rough hemlock or SPF |
-| Wall & door slats | 16 | 2×6 × 8' | Rough hemlock or oak |
-| Knee braces & door frames | 6 | 2×4 × 8' | Rough hemlock or SPF |
+| Front & rear headers | 2 | 2×6 × 8' | Dry rough hemlock or KD SPF |
+| Side rails (net hangers / bracing) | 2 | 2×6 × 8' | Dry rough hemlock or KD SPF |
+| Rafters | 5 | 2×4 × 8' | Dry rough hemlock or KD SPF |
+| Purlins (roof strapping) | 5 | 1×4 × 10' | Dry rough hemlock (full 1"), the traditional barn strapping |
+| Wall & door slats | 16 | 2×6 × 8' | Dry rough hemlock |
+| Front drop bar | 1 | 2×6 × 8' | Dry rough hemlock or oak |
+| Knee braces & door frames | 6 | 2×4 × 8' | Dry rough hemlock or KD SPF |
 
-**Weight-saving options:**
-* PT 2×8 decking instead of green oak saves roughly 100–150 lb.
-* 1×6 wall slats instead of 2×6 save roughly 250 lb. They're fine for cattle or sheep, but too flimsy for horses that lean on walls. If you use 1×6, use 2½" screws for the slats.
+### Keeping the Weight Down
+These choices are already built into the list above:
+
+| Choice | Instead of | Saves (approx.) |
+|---|---|---|
+| Dry hemlock / KD SPF for everything above the base | Green sawmill hemlock | 350–400 lb |
+| 5/4 decking (1"–1¼") | 2" green white oak | 170–300 lb |
+| 1×4 purlins | 2×4 purlins | 60–90 lb |
+
+* **Why the thinner deck is fine:** the joists are only about 10⅝" apart and horses never stand on the floor, so 5/4 boards easily carry a round bale. Thick decking only made sense when the forks were going to push up on it.
+* **What not to lighten:**
+  * Keep the **2×6 wall slats**: 1× boards spanning 6'–7' between posts will bow and crack when horses lean on them.
+  * Keep the **2×10 skirts**, the **4×4 posts** and the **2×6 headers**. The headers carry snow load.
+* **Rough weight breakdown, light build:**
+  * pressure-treated base, posts, skirts and deck: about 600 lb
+  * dry hemlock walls, doors and roof framing: about 500 lb
+  * steel roofing and hardware: about 110 lb
+
+  Kiln-dried-after-treatment (KDAT) PT, if your yard stocks it, takes another 100+ lb off the base.
 
 ### 2. Metal Roofing
 * (3) 36"-coverage × 8' ribbed steel roof panels (Tuff-Rib / ag panel style)
-* (1) 10' metal drip edge for the rear edge (optional)
+* (1) 10' metal drip edge for the rear edge. This is required for horses: it covers the sharp panel ends at the lowest roof edge, about 8' up.
 
 ### 3. Hardware & Fasteners
 Use **hot-dip galvanized** (or stainless) hardware throughout. The chemicals in PT lumber, and the tannins in oak, corrode plain zinc-plated steel quickly.
@@ -83,9 +109,13 @@ Use **hot-dip galvanized** (or stainless) hardware throughout. The chemicals in 
 * (31) Hurricane ties (H2.5A or similar): 21 for joists to skids, 10 for rafters to headers
 
 **Door hardware:**
-* (4) 12" heavy-duty galvanized T-hinges. Each door weighs about 75 lb, so don't go smaller.
+* (4) 12" heavy-duty galvanized T-hinges. Each door weighs 45–75 lb depending on how dry the lumber is, and horses lean on them, so don't go smaller.
 * (1) Heavy-duty slide-bolt latch. Add a clip or carabiner through it if your horses like to work latches open.
 * (1) 18" drop rod / cane bolt
+* (2) Drop-bar holders sized for a 2×6 (open U-style barn-door bar brackets)
+
+**Horse-proofing:**
+* About 60' of galvanized metal chew guard for 2× edges (sold in 8'–10' lengths), plus the short screws made for it
 
 **Hay-net hardware:**
 * (6) 3/8" × 8" forged shoulder eye bolts, each with 1 fender washer and 2 nuts
@@ -93,7 +123,8 @@ Use **hot-dip galvanized** (or stainless) hardware throughout. The chemicals in 
 
 **Screws:**
 * (1 box, ~50) 5/16" × 5" structural timber screws (e.g., GRK RSS or FastenMaster TimberLOK)
-* (~300) 3½" exterior star-drive screws. One size covers the decking, wall slats and door slats.
+* (~350) 3½" exterior star-drive screws. One size covers the decking, skirts, wall slats and door slats.
+* (~30) 3" exterior screws, only if your door stiles are 1½" store lumber. Shorter screws keep the points from poking out the back of the stiles.
 * (1 box, ~250) 1½" roofing screws with EPDM rubber washers
 
 **Optional tow points:**
@@ -117,7 +148,7 @@ Use **hot-dip galvanized** (or stainless) hardware throughout. The chemicals in 
 |---|---|---|---|
 | Skids (4×6) | 3 | **72"** | Chamfer the bottom edge of both ends: mark 2" up the end and 2" in along the bottom, then cut off the triangle. This lets the feeder drag without digging in. |
 | Joists (2×6) | 7 | **84"** | All the same length, no other cuts. |
-| Deck boards (2×8) | 11–12 | **72"** | 11 pieces of rough 8" oak, or 12 of PT 7¼". Rip the last board to fit. Notch 3½" × 3½" at the post corners. |
+| Deck boards (5/4) | 11–16 | **72"** | 16 pieces of PT 5/4×6 (5½" wide), or 11 of rough 5/4×8 oak. Rip the last board to fit. Notch 3½" × 3½" at the post corners. |
 
 ### Posts
 | Part | Qty | Cut |
@@ -131,19 +162,22 @@ Use **hot-dip galvanized** (or stainless) hardware throughout. The chemicals in 
 | Headers (2×6) | 2 | **96"** (no cut) | |
 | Side rails (2×6) | 2 | **72"** | |
 | Rafters (2×4) | 5 | **96"** (no cut) | No birdsmouth notches needed; hurricane ties hold them. |
-| Purlins (2×4 or 1×4) | 5 | **108"** | Matches the 3 panels × 36" coverage. |
+| Purlins (1×4) | 5 | **108"** | Matches the 3 panels × 36" coverage. |
 | Knee braces (2×4) | 8 | **22"** | 45° on both ends, angled toward each other (the piece looks like a trapezoid). |
 | Roof panels | 3 | 8' (no cut) | |
 
-### Walls & Doors
+### Skirts, Walls & Doors
 | Part | Qty | Cut | Notes |
 |---|---|---|---|
+| Side skirts (2×10 PT) | 2 | **72"** | |
+| Front & rear skirts (2×10 PT) | 2 | **87"** | They run past the side skirts to cover their ends. The front skirt is removable. |
 | Side wall slats (2×6) | 8 | **72"** | 4 per side |
 | Rear wall slats (2×6) | 4 | **88"** | They run past the side slats to cover their ends. |
 | Door slats (2×6) | 8 | **37¾"** | Measure the opening first; see Step 8. |
-| Door stiles (2×4) | 4 | **45"** | |
-| Door diagonal braces (2×4) | 2 | ~59", cut to fit | |
-| Spacer block (scrap) | 1 | **8"** | Used to set the gaps between slats. |
+| Door stiles (2×4) | 4 | **40"** | |
+| Door diagonal braces (2×4) | 2 | ~55", cut to fit | |
+| Front drop bar (2×6) | 1 | **73"**, cut to fit | Cut it to fit between the side rails with ½" to spare. |
+| Spacer block (scrap) | 1 | **18"** | Sets the feeding-window gap. |
 
 ---
 
@@ -179,11 +213,11 @@ The outer skids sit 3½" in from the deck edges. The corner posts fill that spac
 * The deck overhangs them by 3½".
 
 ### Key heights (measured from the top of the deck)
-* **Deck top:** about 13" above the ground (12½" with a PT deck).
-* **Walls and doors:** top at about 46".
-* **Side rails:** top at **76"**.
-* **Rear header:** top flush with the rear post tops (about 84").
-* **Front header:** top flush with the front post tops (about 102").
+* **Deck top:** about 12" above the ground.
+* **Walls and doors:** solid from the floor to about **17"**, then an open feeding window from about 17" to **35"**, then a top slat from 35" to **41"**. The doors' window starts about 2" higher.
+* **Side rails and front drop bar:** top at **76"**.
+* **Rear header:** top flush with the rear post tops (about 85").
+* **Front header:** top flush with the front post tops (about 103").
 * **Roof slope:** about 3:12, draining to the rear.
 
 ---
@@ -209,8 +243,8 @@ Doing this before the deck goes on keeps the bolt nuts under the floor easy to r
 
 ### Step 3: Lay the Deck
 1. **Lay the boards:** run the 72" boards front to back across the joists, starting at the left edge. Each end overhangs joist 1 or joist 7 by 3½".
-   * **Green oak:** lay the boards tight together. They'll open small drainage gaps as they dry.
-   * **PT:** leave ¼" gaps.
+   * **PT or dry oak:** leave ¼" gaps for drainage.
+   * **Green oak:** lay the boards tight together. They'll open their own gaps as they dry.
 2. **Notch the corners:** notch the corner boards 3½" × 3½" to fit around the posts. Rip the last board to width.
 3. **Fasten:** drive two 3½" screws at every joist crossing. Pre-drill near the board ends in oak so the ends don't split.
 
@@ -253,23 +287,36 @@ Doing this before the deck goes on keeps the bolt nuts under the floor easy to r
    * Start at the end facing your prevailing wind, so each side lap faces downwind. Overlap each panel one rib onto the last.
    * Fasten with the rubber-washer roofing screws at every purlin, using the **panel manufacturer's screw pattern**. For most ribbed panels, that's in the flat beside each major rib.
    * Snug the screws until the rubber washer just compresses. Don't crush it.
-4. **Drip edge (optional):** add it along the rear edge.
+4. **Drip edge:** add it along the rear edge. It covers the sharp panel ends at the lowest point of the roof. Don't skip it.
 
-### Step 7: Build the Side & Rear Walls
-1. **Bottom slat:**
-   * Screw the bottom side slat to the **outside face** of the front and rear posts. Its bottom edge should line up with the bottom of the deck boards so it covers the deck edge and leaves no gap for hay to fall through.
-   * Use two 3½" screws at each post. Add a screw into the deck edge every 16".
-2. **Remaining slats:** stack the other three slats above it, using the 8" spacer block to set each gap. Keep the slats level.
-3. **Repeat** on the other side.
-4. **Rear wall:** do the same on the **outside (back) face** of the rear posts, using the 88" slats. They run 2" past each corner to cover the ends of the side slats.
+### Step 7: Install the Skirts & Build the Walls
+The skirts close off the space under the floor. Without them, a pawing horse can get a hoof under the deck edge or into a fork bay, underneath a ton of feeder.
+
+1. **Side skirts:**
+   * Hold a 72" 2×10 against the outside of the left posts and joist ends, with its top edge tight under the deck boards. That leaves a gap of about 1¾" at the ground.
+   * Tap it with a hammer where it covers the bolt heads to mark them, then drill a 1¼" recess about ½" deep at each mark on the back so the board sits flat.
+   * Screw it on with two 3½" screws into each post and one into each joist end.
+   * Repeat on the right.
+2. **Rear skirt:** fit the 87" rear skirt the same way across the back of the rear posts and the skid ends. It runs past the side skirts to cover their ends.
+3. **Front skirt (removable):**
+   * Fit the 87" front skirt the same way across the front posts and skid ends.
+   * Fasten it with **screws only, no glue**: two into each post and one into each skid end. You'll back these out every time you move the feeder.
+4. **Solid lower wall:**
+   * Screw the first side slat to the **outside face** of the front and rear posts, with its bottom edge flush with the bottom of the deck boards so it covers the deck edge. Add a screw into the deck edge every 16".
+   * Stack two more slats on top of it, **tight with no gaps**. This makes a solid section about 17" tall that a hoof can't get into.
+5. **Feeding window and top slat:** set the 18" spacer on the solid section and screw the fourth slat on top of it. That leaves an 18" open feeding window: tall enough that a horse's head slides in and out freely, and too tall to pinch a jaw or neck.
+6. **Repeat** on the other side.
+7. **Rear wall:** do the same on the **outside (back) face** of the rear posts with the 88" slats. They run 2" past each corner to cover the ends of the side slats.
+8. **Ease the edges:** knock the sharp edges and splinters off the window edges with a rasp or sander. That's where muzzles rub.
 
 ### Step 8: Build & Hang the Front Doors
 1. **Size the doors:**
    * Measure the opening between the inside faces of the front posts. It should be about 77".
    * Subtract 1½" for the hinge-side and center gaps, then divide by 2. That's your door width, about 37¾". Recut the door slats if your number is different.
 2. **Assemble each door:**
-   * Stand two 45" stiles upright.
-   * Screw four slats across their front face with two 3½" screws at each stile: one slat flush with the top, one flush with the bottom, and two spaced evenly between, about 7" gaps.
+   * Stand two 40" stiles upright.
+   * Screw the slats across their front face with two screws at each stile: three slats tight together at the bottom, and one flush with the top. That leaves a feeding window of about 16". The top slat lines up with the walls.
+   * Use 3½" screws with rough 2" stiles, or 3" screws with 1½" store-lumber stiles, so no points come through the back.
    * Cut a 2×4 diagonal to fit tight on the back. It runs from the **bottom of the hinge side** to the **top of the latch side**, which stops the latch end from sagging.
 3. **Hang the doors:**
    * Set each door in the opening on 1" scrap spacers on the deck. Its front face should line up with the front face of the post.
@@ -277,46 +324,74 @@ Doing this before the deck goes on keeps the bolt nuts under the floor easy to r
    * Pull the spacers.
 4. **Latch the doors:**
    * Mount the drop rod on the inside of one door. Drill a hole in the deck where the rod lands.
-   * Mount the slide latch across both doors on the outside.
+   * Mount the slide latch across both doors on the outside. Clip a carabiner through the latch so lips can't slide it open.
+5. **Install the front drop bar:**
+   * The door tops are only about 53" off the ground, and the opening above them is wide open up to the header. A horse could get a leg over the doors or try to climb in after the last of the bale.
+   * Screw a drop-bar holder to the inside face of each side rail at its front end, so the bar sits level with the rails (top at 76").
+   * Drop the 73" bar in. That leaves a feeding opening about 30" tall over the doors, the same as on the sides. Lift the bar out to load a bale.
 
-### Step 9: Install the Hay-Net Hardware
+### Step 9: Install the Chew Guards
+Horses chew softwood, especially hemlock, and they work hardest on any edge they can grip.
+
+1. **Cap the edges:** fit galvanized chew guard over the top edge of:
+   * every top slat
+   * the top slat of every solid lower section, which is the bottom edge of the windows
+   * the doors
+   * the drop bar
+2. **Optional:** add chew guard to the outside corners of the four posts, from the wall top up to about 6' above the ground. PT posts shouldn't be chewed.
+3. **Fasten:** use the screws made for the chew guard, and make sure no screw heads stand proud.
+
+### Step 10: Install the Hay-Net Hardware
 1. **Drill the holes:** drill 3/8" holes **straight down** through the side rails and the rear header:
    * two per side rail, about 18" in from each post
    * two in the rear header, between rafters
 2. **Install the eye bolts:** fit an eye bolt from below in each hole, with the eye hanging down into the feeder. On top, add a fender washer and two nuts tightened against each other so they can't back off. Vertical eye bolts are pulled straight along their length, which is much stronger than pulling them sideways.
 3. **Hang the nets:**
-   * Clip a carabiner into each eye.
-   * The rear header sits about 8" higher than the side rails, so add a short chain or strap to the rear net if you want all three nets at the same height.
-   * With the nets **empty**, check that the bottom stays well above leg height: at least 14" above the deck, and higher for horses. Nets stretch and drop as they empty.
+   * Clip a carabiner into each eye. Tie each net to its carabiner with a **loop of baling twine**, so a horse that gets tangled can break free.
+   * The nets hang a few inches inside the walls, so a pawing horse can't get a hoof into them. That's the main danger with free-hanging nets.
+   * Hang each net so that, full, its bottom sits about level with the top of the wall. Horses then eat over the wall top.
+   * The rear header sits about 8" higher than the side rails, so add a short chain or strap to the rear net to bring it down to the same height as the others.
 
 ---
 
 ## Moving the Feeder
 
 ### With pallet forks
-1. **Empty it:** remove the bale and nets first. Never move it loaded.
-2. **Set the forks:** space them about 37" apart so each tine is centered in a bay.
-3. **Drive in:** drive straight in from the front, low and level. Stop just before the fork backrest touches the doors, since pushing on them will bend the hinges.
-4. **Lift:**
+1. **Empty it:** remove the bale and nets first. Never move it loaded. Move the horses out of the area, too.
+2. **Remove the front skirt:** unscrew it to open the fork bays. Set it on the deck for the move.
+3. **Set the forks:** space them about 37" apart so each tine is centered in a bay.
+4. **Drive in:** drive straight in from the front, low and level. Stop just before the fork backrest touches the doors, since pushing on them will bend the hinges.
+5. **Lift:**
    * Lift only 4"–6", tilt back slightly, and travel slowly on flat ground.
    * The feeder is tall and blocks your view forward, so use a spotter or back up when you can.
-5. **First lift:** make it a test lift. Raise the feeder an inch, check that the loader isn't straining and the rear wheels stay planted, then go.
+6. **First lift:** make it a test lift. Raise the feeder an inch, check that the loader isn't straining and the rear wheels stay planted, then go.
+7. **Reinstall the front skirt** before you let the horses back in.
 
 ### By dragging (often the easier option)
-* The chamfered skids are made for dragging. Install the optional 5/8" eye bolts sideways through the front of each outer skid, about 6" from the end, between the skid end and joist 1.
+* The chamfered skids are made for dragging. Install the optional 5/8" eye bolts sideways through each outer skid, about 6" from the front end, with the **eye facing into the fork bay**. The side skirts cover the outside face of the skids, so the eyes have to be reachable from the bay side.
+* Remove the front skirt to hook up.
 * Pull from both eyes with a chain bridle so the load is shared and the feeder tracks straight.
 * Use shoulder-type forged eye bolts. Plain eye bolts bend when they're pulled sideways.
 
 ---
 
-## Animal Safety Notes
-* **Slat gaps:** the 7"–8" gaps used here are wide enough for a hoof, or for a goat's or calf's head, to go through and get stuck. For small stock, tighten the gaps to about 4" or less. For horses, make sure the gaps suit how your animals eat and play.
-* **Hay nets for horses:** clip each net to its carabiner through a loop of baling twine, so a horse that gets caught can break free.
-* **PT lumber:** keep PT lumber out of chewing reach. It's used here only for the base and the posts. Oak and hemlock are the parts animals can reach.
+## Horse Safety Notes
+* **The gap rule:** every opening a horse can reach should be either too small for a hoof (the tight lower walls and the skirts), or big enough for a head or leg to come back out easily (the 16"–18" windows, and the 30" openings under the rails and the drop bar). Mid-size gaps, about 4"–12", are the ones that trap legs and heads. Don't add any while building, for example by spacing slats differently.
+* **No snag points:**
+  * Smooth carriage-bolt heads face outward everywhere. The nuts end up inside the crib or under the deck.
+  * After the 2–3 month re-tighten, cut off any bolt end that sticks out more than a couple of threads past the nut, and file it smooth.
+  * Check that no screw points come through anywhere a horse can reach.
+* **Halters:** turn horses out with no halter, or in breakaway halters, around any feeder with hardware overhead.
+* **Feeding spots:** horses squabble at feeders. Plan for at least one more feeding spot than you have horses, and watch the pecking order for the first few days. If timid horses are getting run off, set up a second hay station.
+* **Round bale waste:** a round-bale slow-feed net over the bale cuts waste a lot and works well inside this crib.
+* **PT lumber** is used only for the base, skirts and posts. The chew guards and skirts keep it out of chewing reach.
 
 ## Maintenance
-* **After 2–3 months:** re-tighten every bolt. Green lumber shrinks, and the nylon lock nuts let you snug them up again.
+* **After 2–3 months:** re-tighten every bolt. Even "dry" lumber and PT settle a little, and green lumber shrinks a lot. The nylon lock nuts let you snug them up again.
 * **Every year:**
   * Check the hurricane ties and roofing screws.
   * Look for deck boards cracked by hooves.
   * Clear packed manure from around the skids so they can dry out.
+* **Regularly:**
+  * Check the chew guards for loose screws or lifted edges. Bent chew guard is sharp, so replace it.
+  * Check the skirts for kicked-loose boards.
