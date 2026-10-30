@@ -3,10 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>Hay Feeder Render</title>
-<style>html,body{margin:0;height:100%;overflow:hidden;background:#cfdce6}canvas{display:block}</style>
+<style>html,body{margin:0;height:100%;overflow:hidden;background:#cfdce6}canvas{display:block}
+#ui{position:fixed;top:16px;left:16px;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,.85);font:14px/1.2 -apple-system,system-ui,sans-serif;color:#222;box-shadow:0 1px 4px rgba(0,0,0,.15);user-select:none}#ui label{display:flex;align-items:center;gap:8px;cursor:pointer}</style>
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
 </head>
 <body>
+<div id="ui" hidden><label><input type="checkbox"> Square bales (4 nets)</label></div>
 <script type="module">
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -15,7 +17,10 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 // d = depth from front edge of deck (0 front .. 72 back); three z = -d.
 const params = new URLSearchParams(location.search);
 const view = params.get('view') || 'front';
-const showBale = params.get('bale') !== '0';
+// nets=1 hangs 4 vertical square-bale nets (one per side); the round bale is then off unless bale=1
+const showNets = params.get('nets') === '1';
+const showBale = params.has('bale') ? params.get('bale') !== '0' : !showNets;
+const showRoof = params.get('roof') !== '0';
 // fixed size when w/h are given (screenshots), otherwise fill the window
 const fixed = params.has('w') || params.has('h');
 const W = +(params.get('w') || (fixed ? 1600 : innerWidth)), H = +(params.get('h') || (fixed ? 1100 : innerHeight));
@@ -212,7 +217,7 @@ cap(5.5, 78.5, 4, 6, 88);
 for (const x of [5.5, 77.5]) box(x, x + 1, 81.5, 86, 3.5, 6.5, iron, scene, false);
 
 // ---------- roof ----------
-{
+if (showRoof) {
   const theta = Math.atan2(18, 68.5);
   const roof = new THREE.Group();
   roof.position.set(0, 115 - 35 * 18 / 68.5, -35);
@@ -242,8 +247,10 @@ for (const x of [5.5, 77.5]) box(x, x + 1, 81.5, 86, 3.5, 6.5, iron, scene, fals
   lbox(-12.2, 96.2, 3.6, 6.0, -48.6, -48, steel, false);
 }
 
-// ---------- round bale ----------
-if (showBale) {
+// ---------- hay ----------
+let hayTex;
+function hayTexture() {
+  if (hayTex) return hayTex;
   const c = document.createElement('canvas'); c.width = 512; c.height = 256;
   const g = c.getContext('2d'); g.fillStyle = '#c8ad6a'; g.fillRect(0, 0, 512, 256);
   for (let i = 0; i < 2600; i++) {
@@ -252,7 +259,110 @@ if (showBale) {
     g.lineWidth = 0.6 + rand() * 1.4;
     g.beginPath(); g.moveTo(x, y); g.lineTo(x + l, y + (rand() - 0.5) * 6); g.stroke();
   }
-  const side = new THREE.CanvasTexture(c); side.colorSpace = THREE.SRGBColorSpace;
+  hayTex = new THREE.CanvasTexture(c); hayTex.colorSpace = THREE.SRGBColorSpace;
+  return hayTex;
+}
+
+// ---------- hay-net eye bolts (3/8" forged shoulder, eye down) + carabiners ----------
+// one per net: [x, underside y, d, member runs along x]
+const eyes = [
+  [4.5, 82, 36, false],     // left side rail, centered
+  [79.5, 82, 36, false],    // right side rail, centered
+  [45.5, 91, 67.5, true],   // rear header, just right of the center rafter
+  [42, 82, 5, true],        // front drop bar, centered
+];
+function part(geo, mat, parent, x, y, z) {
+  const m = new THREE.Mesh(geo, mat); m.position.set(x, y, z);
+  m.castShadow = true; parent.add(m); return m;
+}
+for (const [x, yb, d, alongX] of eyes) {
+  const g = new THREE.Group(); g.position.set(x, yb, -d);
+  if (!alongX) g.rotation.y = Math.PI / 2;
+  scene.add(g);
+  part(new THREE.TorusGeometry(0.7, 0.2, 10, 24), steel, g, 0, -1.15, 0);           // eye
+  part(new THREE.CylinderGeometry(0.45, 0.45, 0.25, 12), steel, g, 0, -0.15, 0);   // shoulder
+  part(new THREE.CylinderGeometry(1.1, 1.1, 0.12, 20), steel, g, 0, 6.2, 0);       // fender washer
+  part(new THREE.CylinderGeometry(0.33, 0.33, 0.7, 6), steel, g, 0, 6.6, 0);       // jam nuts
+  const cara = part(new THREE.TorusGeometry(0.55, 0.13, 8, 20), steel, g, 0, -2.6, 0);
+  cara.rotation.y = Math.PI / 2; cara.scale.y = 1.9;
+}
+const caraBottom = 3.65; // below the member's underside
+
+// ---------- square-bale nets ----------
+const netGroup = new THREE.Group(); scene.add(netGroup);
+{
+  // full small-square-bale net hanging on end from one hook: height, half-widths along / across the wall; top y
+  const NH = 38, RA = 11, RX = 8.5, NTOP = 76;
+  // lathe profile: gathered neck at the hook, full body, rounded bottom. `lean` shifts the body
+  // across the wall (local z) so it rests against the wall instead of hanging through it.
+  const netGeo = (grow, lean) => {
+    const pts = [];
+    for (let i = 0; i <= 40; i++) {
+      const sd = 1 - i / 40; // 1 bottom .. 0 top
+      let r = sd < 0.22 ? 0.1 + 0.9 * Math.sin(Math.PI / 2 * sd / 0.22)
+        : sd > 0.88 ? Math.sqrt(Math.max(0, 1 - ((sd - 0.88) / 0.12) ** 2))
+        : 1 + 0.05 * Math.sin(Math.PI * (sd - 0.22) / 0.66);
+      pts.push(new THREE.Vector2(r + grow / 10, -sd * NH));
+    }
+    const g = new THREE.LatheGeometry(pts, 32);
+    const p = g.attributes.position;
+    for (let i = 0; i < p.count; i++) {
+      const sd = -p.getY(i) / NH, w = Math.min(1, sd / 0.35);
+      p.setX(i, p.getX(i) * RA);
+      p.setZ(i, p.getZ(i) * RX + lean * w * w * (3 - 2 * w));
+    }
+    g.computeVertexNormals();
+    return g;
+  };
+  // diamond mesh as an alpha map
+  const c = document.createElement('canvas'); c.width = c.height = 64;
+  const g = c.getContext('2d'); g.fillStyle = '#000'; g.fillRect(0, 0, 64, 64);
+  g.strokeStyle = '#fff'; g.lineWidth = 6;
+  for (const [a, b] of [[[0, 0], [64, 64]], [[64, 0], [0, 64]], [[-32, 32], [32, -32]], [[32, 96], [96, 32]], [[-32, 32], [32, 96]], [[32, -32], [96, 32]]]) {
+    g.beginPath(); g.moveTo(...a); g.lineTo(...b); g.stroke();
+  }
+  const netTex = new THREE.CanvasTexture(c);
+  netTex.wrapS = netTex.wrapT = THREE.RepeatWrapping; netTex.repeat.set(28, 18);
+  const hayMat = new THREE.MeshStandardMaterial({ map: hayTexture(), roughness: 1, side: THREE.DoubleSide });
+  const netMat = new THREE.MeshStandardMaterial({ color: '#22382b', alphaMap: netTex, alphaTest: 0.5, side: THREE.DoubleSide, roughness: 0.8 });
+  const twine = new THREE.MeshStandardMaterial({ color: '#d9822b', roughness: 0.9 });
+  const rod = (a, b, r, mat) => {
+    const dir = b.clone().sub(a);
+    const m = new THREE.Mesh(new THREE.CylinderGeometry(r, r, dir.length(), 6), mat);
+    m.position.copy(a).add(b).multiplyScalar(0.5);
+    m.quaternion.setFromUnitVectors(V(0, 1, 0), dir.normalize());
+    m.castShadow = true; netGroup.add(m);
+  };
+  // [eye, lean in toward the middle (local z), extra chain drop]
+  const nets = [
+    [eyes[0], 4.5, 0],     // left
+    [eyes[1], -4.5, 0],    // right
+    [eyes[2], 4, 9],       // rear: chain brings it down to the others' height
+    [eyes[3], -7.5, 0],    // front, resting against the back of the doors
+  ];
+  for (const [[x, yb, d, alongX], lean, chain] of nets) {
+    let y = yb - caraBottom;
+    for (let i = 0; i < chain; i++, y -= 0.95) { // short chain: alternating links
+      const link = part(new THREE.TorusGeometry(0.42, 0.1, 6, 14), iron, netGroup, x, y - 0.6, -d);
+      link.scale.y = 1.6; link.rotation.y = i % 2 ? 0 : Math.PI / 2;
+    }
+    // baling-twine loop from the carabiner (or chain) down to the net's drawstring
+    for (const o of [-0.25, 0.25]) {
+      const off = alongX ? V(o, 0, 0) : V(0, 0, o);
+      rod(P3(x, y, d).add(off), P3(x, NTOP - 0.3, d).add(off), 0.11, twine);
+    }
+    const grp = new THREE.Group(); grp.position.set(x, NTOP, -d);
+    if (!alongX) grp.rotation.y = Math.PI / 2;
+    netGroup.add(grp);
+    const body = new THREE.Mesh(netGeo(0, lean), hayMat); body.castShadow = body.receiveShadow = true; grp.add(body);
+    const net = new THREE.Mesh(netGeo(0.5, lean), netMat); net.receiveShadow = true; grp.add(net);
+  }
+}
+
+// ---------- round bale ----------
+const baleGroup = new THREE.Group(); scene.add(baleGroup);
+{
+  const side = hayTexture();
   const c2 = document.createElement('canvas'); c2.width = c2.height = 512;
   const g2 = c2.getContext('2d'); g2.fillStyle = '#bea464'; g2.fillRect(0, 0, 512, 512);
   for (let r = 4; r < 256; r += 2 + rand() * 4) {
@@ -270,7 +380,7 @@ if (showBale) {
   bale.rotation.z = Math.PI / 2;
   bale.position.set(42, 12 + 28.5, -38);
   bale.castShadow = bale.receiveShadow = true;
-  scene.add(bale);
+  baleGroup.add(bale);
 }
 
 // ---------- lights ----------
@@ -297,12 +407,29 @@ const views = {
   rear: { pos: V(270, 175, -290), at: V(40, 48, -36) },
   side: { pos: V(-260, 70, -30), at: V(42, 55, -36) },
   bottom: { pos: V(-140, -250, 200), at: V(42, 55, -36) },
+  top: { pos: V(42, 290, 10), at: V(42, 40, -36) },
 };
 const v = views[view] || views.front;
 cam.position.copy(v.pos); cam.lookAt(v.at);
 
+netGroup.visible = showNets;
+baleGroup.visible = showBale;
 renderer.render(scene, cam);
 window.__done = true;
+
+// hay toggle (hidden in fixed-size screenshots): checked = 4 square-bale nets, unchecked = round bale
+if (!fixed) {
+  const ui = document.getElementById('ui'), box = ui.querySelector('input');
+  ui.hidden = false;
+  box.checked = showNets;
+  box.addEventListener('change', () => {
+    netGroup.visible = box.checked;
+    baleGroup.visible = !box.checked;
+    params.set('nets', box.checked ? '1' : '0'); params.delete('bale');
+    history.replaceState(null, '', '?' + params);
+    renderer.render(scene, cam);
+  });
+}
 
 // interactive: drag to orbit, scroll to zoom
 const controls = new OrbitControls(cam, renderer.domElement);

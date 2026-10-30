@@ -1,5 +1,6 @@
 // Usage: node render/shot.mjs "file://$PWD/render/index.html?view=front&w=1600&h=1100" images/front.png 1600 1100
-// Views: front | rear | side | bottom. Add &bale=0 to render it empty.
+// Views: front | rear | side | bottom | top. Add &bale=0 to render it empty,
+// &nets=1 to hang 4 square-bale nets instead of the round bale, &roof=0 to leave the roof off.
 // Opens a new tab in the already-running Chrome (port 9222), waits for window.__done, screenshots, closes the tab.
 import { writeFileSync } from 'node:fs';
 

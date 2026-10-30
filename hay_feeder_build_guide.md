@@ -2,7 +2,7 @@
 
 **Footprint:** 7' Wide × 6' Deep (deck), roughly 7'4" × 6'2" over the walls
 **Built for:** Horses
-**Features:** Pallet-style skid base that loader forks slide straight under, double-swing front doors for round bale access, and overhead hanging points for 3 square-bale nets.
+**Features:** Pallet-style skid base that loader forks slide straight under, double-swing front doors for round bale access, and overhead hanging points for 4 square-bale nets, one on each side.
 **Horse-safety features:**
 * Solid lower walls and skirts around the base, so hooves can't get caught in gaps or under the floor.
 * Wide feeding windows a head slides in and out of freely.
@@ -40,7 +40,7 @@
 3. **Pick the site:**
    * Choose a level, well-drained spot.
    * Point the **rear** wall toward your prevailing wind and weather. The roof sheds water off the back.
-4. **Know your bale size:** the inside fits round bales up to **5' × 5'**. The door opening is about 77" wide.
+4. **Know your bale size:** the inside fits round bales up to **5' × 5'**. The door opening is about 77" wide. For square bales, it hangs up to **four** small-square-bale nets, one on each side (see *Hay-net layout*).
 
 ---
 
@@ -118,8 +118,9 @@ Use **hot-dip galvanized** (or stainless) hardware throughout. The chemicals in 
 * About 60' of galvanized metal chew guard for 2× edges (sold in 8'–10' lengths), plus the short screws made for it
 
 **Hay-net hardware:**
-* (6) 3/8" × 8" forged shoulder eye bolts, each with 1 fender washer and 2 nuts
-* (6) Heavy-duty locking carabiners (500+ lb rating)
+* (4) 3/8" × 8" forged shoulder eye bolts, each with 1 fender washer and 2 nuts (1 per net)
+* (4) Heavy-duty locking carabiners (500+ lb rating)
+* (1) 10" length of 3/16" galvanized chain, plus 1 more carabiner or quick link, to drop the rear net to the same height as the others
 
 **Screws:**
 * (1 box, ~50) 5/16" × 5" structural timber screws (e.g., GRK RSS or FastenMaster TimberLOK)
@@ -176,7 +177,7 @@ Use **hot-dip galvanized** (or stainless) hardware throughout. The chemicals in 
 | Door slats (2×6) | 8 | **37¾"** | Measure the opening first; see Step 8. |
 | Door stiles (2×4) | 4 | **40"** | |
 | Door diagonal braces (2×4) | 2 | ~55", cut to fit | |
-| Front drop bar (2×6) | 1 | **73"**, cut to fit | Cut it to fit between the side rails with ½" to spare. |
+| Front drop bar (2×6) | 1 | **73"**, cut to fit | Cut it to fit between the side rails with ½" to spare. It also carries the front hay net. |
 | Spacer block (scrap) | 1 | **18"** | Sets the feeding-window gap. |
 
 ---
@@ -219,6 +220,22 @@ The outer skids sit 3½" in from the deck edges. The corner posts fill that spac
 * **Rear header:** top flush with the rear post tops (about 85").
 * **Front header:** top flush with the front post tops (about 103").
 * **Roof slope:** about 3:12, draining to the rear.
+
+### Hay-net layout (square-bale mode)
+Four nets fit, one per side, with plenty of room at the corners. This assumes vertical slow-feed nets that hold one small square bale (about 14" × 18" × 36") on end and hang from a single hook. Full and hung, each one is roughly **22" wide × 17" deep × 38" tall**, including the gathered neck.
+
+| Net | Hangs from | Eye bolt at | Net occupies (plan view) |
+|---|---|---|---|
+| Left | Left side rail | 36" from the front (centered) | 0"–17" from the left, 25"–47" from the front |
+| Right | Right side rail | 36" from the front (centered) | 67"–84" from the left, 25"–47" from the front |
+| Rear | Rear header, on a 10" chain | 45½" from the left, just right of the center rafter | 34"–57" from the left, 55"–72" from the front |
+| Front | Front drop bar, behind the doors | 42" from the left (centered) | 31"–53" from the left, 4"–21" from the front |
+
+* **Each net rests against its wall:** the hook is a few inches in from the wall, so the full net hangs against the inside of the wall (or the back of the doors) instead of swinging.
+* **Clearance:** at least 12" between neighboring nets, so they don't rub or tangle.
+* **Open middle:** about 49" × 34" stays clear, so you can step in to refill them.
+* **Heights:** the hooks sit about 70" above the deck. Each net hangs from about 64" above the deck down to about 26", so its lower end is behind the top slat and shows through the top of the lower feeding window. Horses eat over the wall top (over the doors at the front) and through the lower window.
+* **Nets or a round bale, not both:** a 5' round bale fills the space the nets hang in. Take the nets down before you load one.
 
 ---
 
@@ -329,6 +346,7 @@ The skirts close off the space under the floor. Without them, a pawing horse can
    * The door tops are only about 53" off the ground, and the opening above them is wide open up to the header. A horse could get a leg over the doors or try to climb in after the last of the bale.
    * Screw a drop-bar holder to the inside face of each side rail at its front end, so the bar sits level with the rails (top at 76").
    * Drop the 73" bar in. That leaves a feeding opening about 30" tall over the doors, the same as on the sides. Lift the bar out to load a bale.
+   * The bar also carries the front hay net (Step 10). The net's weight only pulls it down into its holders, but always unclip the net before lifting the bar out.
 
 ### Step 9: Install the Chew Guards
 Horses chew softwood, especially hemlock, and they work hardest on any edge they can grip.
@@ -342,22 +360,25 @@ Horses chew softwood, especially hemlock, and they work hardest on any edge they
 3. **Fasten:** use the screws made for the chew guard, and make sure no screw heads stand proud.
 
 ### Step 10: Install the Hay-Net Hardware
-1. **Drill the holes:** drill 3/8" holes **straight down** through the side rails and the rear header:
-   * two per side rail, about 18" in from each post
-   * two in the rear header, between rafters
+1. **Drill the holes:** drill one 3/8" hole **straight down** per net, at the positions in *Hay-net layout*:
+   * each side rail at its center, 36" from the front
+   * the rear header about 3½" to the right of the center rafter, so the washer and nuts on top clear it
+   * the front drop bar at its center, through the chew guard too. Lay the bar on sawhorses to drill it.
 2. **Install the eye bolts:** fit an eye bolt from below in each hole, with the eye hanging down into the feeder. On top, add a fender washer and two nuts tightened against each other so they can't back off. Vertical eye bolts are pulled straight along their length, which is much stronger than pulling them sideways.
 3. **Hang the nets:**
-   * Clip a carabiner into each eye. Tie each net to its carabiner with a **loop of baling twine**, so a horse that gets tangled can break free.
-   * The nets hang a few inches inside the walls, so a pawing horse can't get a hoof into them. That's the main danger with free-hanging nets.
-   * Hang each net so that, full, its bottom sits about level with the top of the wall. Horses then eat over the wall top.
-   * The rear header sits about 8" higher than the side rails, so add a short chain or strap to the rear net to bring it down to the same height as the others.
+   * Clip a carabiner into each eye. Tie each net's drawstring to its carabiner with a **loop of baling twine**, so a horse that gets tangled can break free.
+   * Each net hangs on end against the inside of its wall, so a pawing horse can't get a hoof into it. That's the main danger with free-hanging nets.
+   * A full net's bottom should sit about 26" above the deck, behind the top of the lower feeding window. If your nets are shorter, add chain to bring them down to about that height.
+   * **Check them empty:** nets stretch as they empty. If an empty net's bottom drops to the solid lower wall (17" above the deck), shorten the twine loop.
+   * The rear header sits about 9" higher than the side rails, so hang the rear net from a 10" chain to bring it down to the same height as the others.
+   * The front net hangs behind the doors. The doors swing out, so you can open them with the net still hung.
 
 ---
 
 ## Moving the Feeder
 
 ### With pallet forks
-1. **Empty it:** remove the bale and nets first. Never move it loaded. Move the horses out of the area, too.
+1. **Empty it:** remove the bale or nets first. Never move it loaded. Move the horses out of the area, too.
 2. **Remove the front skirt:** unscrew it to open the fork bays. Set it on the deck for the move.
 3. **Set the forks:** space them about 37" apart so each tine is centered in a bay.
 4. **Drive in:** drive straight in from the front, low and level. Stop just before the fork backrest touches the doors, since pushing on them will bend the hinges.
@@ -382,7 +403,7 @@ Horses chew softwood, especially hemlock, and they work hardest on any edge they
   * After the 2–3 month re-tighten, cut off any bolt end that sticks out more than a couple of threads past the nut, and file it smooth.
   * Check that no screw points come through anywhere a horse can reach.
 * **Halters:** turn horses out with no halter, or in breakaway halters, around any feeder with hardware overhead.
-* **Feeding spots:** horses squabble at feeders. Plan for at least one more feeding spot than you have horses, and watch the pecking order for the first few days. If timid horses are getting run off, set up a second hay station.
+* **Feeding spots:** horses squabble at feeders. Plan for at least one more feeding spot than you have horses (with all four nets hung, that's up to three horses), and watch the pecking order for the first few days. If timid horses are getting run off, set up a second hay station.
 * **Round bale waste:** a round-bale slow-feed net over the bale cuts waste a lot and works well inside this crib.
 * **PT lumber** is used only for the base, skirts and posts. The chew guards and skirts keep it out of chewing reach.
 
